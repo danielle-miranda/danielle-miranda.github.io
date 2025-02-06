@@ -1,6 +1,10 @@
 const element = React.createElement(
   'h1',
-  {className: 'title'},
+  {
+    className: 'title',
+    onClick: () => {console.log('clicked');},
+    style: {fontFamily:'sans-serif', color:'rgb(2555, 100, 100)'}
+  },
   'Hello World!'
 );
 
